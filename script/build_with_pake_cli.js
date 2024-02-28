@@ -15,6 +15,7 @@ console.log('height: ', process.env.HEIGHT);
 console.log('width: ', process.env.WIDTH);
 console.log('transparent: ', process.env.TRANSPARENT);
 console.log('resize: ', process.env.RESIZE);
+console.log('fullscreen: ', process.env.FULLSCREEN);
 console.log('is multi arch? only for Mac: ', process.env.MULTI_ARCH);
 console.log('targets type? only for Linux: ', process.env.TARGETS);
 console.log('===========================\n');
@@ -27,6 +28,10 @@ if (process.env.TRANSPARENT === 'true') {
 }
 
 if (process.env.FULLSCREEN === 'true') {
+  params = `${params} --fullscreen`;
+}
+
+if (process.env.RESIZE === 'true') {
   params = `${params} --resize`;
 }
 
