@@ -23,11 +23,11 @@ on:
       width:
         description: '[Width, Optional]'
         required: false
-        default: '1200'
+        default: '1080'
       height:
         description: '[Height, Optional]'
         required: false
-        default: '780'
+        default: '1920'
       transparent:
         description: '[Transparent, Optional, MacOS only]'
         required: false
@@ -37,7 +37,7 @@ on:
         description: '[Fullscreen]'
         required: false
         type: boolean
-        default: false
+        default: true
       multi_arch:
         description: '[MultiArch, Optional, MacOS only]'
         required: false
