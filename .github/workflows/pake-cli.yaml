@@ -225,7 +225,7 @@ jobs:
             $args += "--new-window"
           }
 
-          $args += "--installer-language zh-CN"
+          $args += "--installer-language", "zh-CN"
 
           Write-Host "Running: node dist/cli.js $($args -join ' ')"
           node dist/cli.js $args
