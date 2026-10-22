@@ -226,6 +226,7 @@ jobs:
           }
 
           $args += "--installer-language", "zh-CN"
+          $args += "--maximize"
 
           Write-Host "Running: node dist/cli.js $($args -join ' ')"
           node dist/cli.js $args
